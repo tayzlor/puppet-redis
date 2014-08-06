@@ -44,7 +44,7 @@ class redis (
   $conf_glueoutputbuf                     = undef,
   $conf_hash_max_zipmap_entries           = '512',
   $conf_hash_max_zipmap_value             = '64',
-  $conf_hll_sparse_max_bytes              = undef, # default 3000, 2.8.5?+
+  $conf_hll_sparse_max_bytes              = '3000', # default 3000, 2.8.5?+
   $conf_hz                                = '10', # 2.6+
   $conf_include                           = [], # array of custom include files
   $conf_list_max_ziplist_entries          = '512',
@@ -53,7 +53,7 @@ class redis (
   $conf_loglevel                          = 'notice',
   $conf_lua_time_limit                    = '5000', # 2.6+
   $conf_masterauth                        = undef,
-  $conf_maxclients                        = undef, # default 10000 in 2.6+
+  $conf_maxclients                        = '10000', # default 10000 in 2.6+
   $conf_maxmemory                         = undef,
   $conf_maxmemory_policy                  = undef,
   $conf_maxmemory_samples                 = undef,
@@ -89,12 +89,6 @@ class redis (
   $conf_timeout                           = '0',
   $conf_unixsocket                        = '/tmp/redis.sock', # 2.2+
   $conf_unixsocketperm                    = '755', # 2.4+
-  $conf_vm_enabled                        = 'no', # deprecated in 2.4+
-  $conf_vm_max_memory                     = '0', # deprecated in 2.4+
-  $conf_vm_max_threads                    = '4', # deprecated in 2.4+
-  $conf_vm_page_size                      = '32', # deprecated in 2.4+
-  $conf_vm_pages                          = '134217728', # deprecated in 2.4+
-  $conf_vm_swap_file                      = '/tmp/redis.swap', # deprecated in 2.4+
   $conf_zset_max_ziplist_entries          = '128', # 2.4+
   $conf_zset_max_ziplist_value            = '64', # 2.4+
   $package_ensure                         = 'present',
