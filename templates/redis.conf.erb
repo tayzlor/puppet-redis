@@ -871,7 +871,6 @@ hz <%= @conf_hz %>
 <%- if @conf_aof_rewrite_incremental_fsync -%>
 aof-rewrite-incremental-fsync <%= @conf_aof_rewrite_incremental_fsync %>
 <%- end -%>
-<%- end -%>
 
 <%- if @conf_append -%>
 <%- @conf_append.sort.each do |variable, value| -%>
