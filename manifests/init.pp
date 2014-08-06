@@ -44,7 +44,7 @@ class redis (
   $conf_glueoutputbuf                     = undef,
   $conf_hash_max_zipmap_entries           = '512',
   $conf_hash_max_zipmap_value             = '64',
-  $conf_hll_sparse_max_bytes              = '3000', # default 3000, 2.8.5?+
+  $conf_hll_sparse_max_bytes              = undef, # default 3000, 2.8.5?+
   $conf_hz                                = '10', # 2.6+
   $conf_include                           = [], # array of custom include files
   $conf_list_max_ziplist_entries          = '512',
